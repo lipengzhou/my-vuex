@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <h1>My Vuex</h1>
-    <!-- <p>State: {{ $store.state.count }}</p>
-    <p>Getters: {{ $store.getters.getterCount }}</p>
+    <p>State: {{ $store.state.count }}</p>
+    <br><br>
+    <button @click="$store.state.count++">测试</button>
+    <!-- <p>Getters: {{ $store.getters.getterCount }}</p>
     <button @click="$store.commit('increment')">同步修改状态</button>
     <br><br>
     <button @click="$store.dispatch('incrementAsync')">异步修改状态</button> -->
@@ -11,9 +13,7 @@
 
 <script>
 export default {
-  created () {
-    console.log(this)
-  }
+  created () {}
 }
 </script>
 
