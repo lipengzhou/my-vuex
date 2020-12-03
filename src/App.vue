@@ -3,11 +3,14 @@
     <h1>My Vuex</h1>
     <p>State: {{ $store.state.count }}</p>
     <br><br>
-    <button @click="$store.state.count++">测试</button>
-    <!-- <p>Getters: {{ $store.getters.getterCount }}</p>
-    <button @click="$store.commit('increment')">同步修改状态</button>
+    <button @click="$store.dispatch('incrementAsync')">测试</button>
+    <!-- <p>{{ $store.state.a }}</p> -->
+    <!-- <button @click="$store.state.a++">测试</button> -->
     <br><br>
-    <button @click="$store.dispatch('incrementAsync')">异步修改状态</button> -->
+    <p>Getters: {{ $store.getters.getterCount }}</p>
+    <!-- <button @click="$store.commit('increment')">同步修改状态</button> -->
+    <!-- <br><br> -->
+    <!-- <button @click="$store.dispatch('incrementAsync')">异步修改状态</button> -->
   </div>
 </template>
 
