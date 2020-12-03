@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <p>State: {{ $store.state.count }}</p>
+    <h1>My Vuex</h1>
+    <!-- <p>State: {{ $store.state.count }}</p>
     <p>Getters: {{ $store.getters.getterCount }}</p>
     <button @click="$store.commit('increment')">同步修改状态</button>
     <br><br>
-    <button @click="$store.dispatch('incrementAsync')">异步修改状态</button>
+    <button @click="$store.dispatch('incrementAsync')">异步修改状态</button> -->
   </div>
 </template>
 
