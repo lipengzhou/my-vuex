@@ -1,4 +1,5 @@
-// eslint-disable-next-line no-unused-vars
+import applyMixin from './mixin'
+
 let Vue
 
 export class Store {
@@ -8,6 +9,7 @@ export class Store {
 }
 
 export const install = (_Vue, options) => {
-  Vue = _Vue
   console.log('install')
+  Vue = _Vue
+  applyMixin(Vue)
 }

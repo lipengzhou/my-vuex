@@ -9,6 +9,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  created () {
+    console.log(this)
+  }
+}
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
