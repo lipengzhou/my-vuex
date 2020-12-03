@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <p>State: {{ $store.state.count }}</p>
+    <p>Getters: {{ $store.getters.getterCount }}</p>
+    <button @click="$store.commit('increment')">同步修改状态</button>
+    <br><br>
+    <button @click="$store.dispatch('incrementAsync')">异步修改状态</button>
   </div>
 </template>
 
